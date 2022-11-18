@@ -1,12 +1,13 @@
 {
     "USER": {
-        "user": "valus14@gmail.com",
-        "password": "nlpkbuksweryonoc",
-        "sender": "valus14@gmail.com"
+        "user": "INGRESE UN EL USUARIO DE GOOGLE AUTORIZADO PARA APLICACIONES",
+        "password": "INGRESE LA CONTRASEÑA DE GOOGLE AUTORIZADA PARA APLICACIONES",
+        "sender": "INGRESE UNA DIRECCION DE CORREO ELECTRÓNICO COMO REMITENTE"
     },
 
     "MESSAGE": {
         "message": "Se informa que hemos cambiado la privacidad de un documento.",
+        # SOLO SE ACEPTAN 128 CARACTERES EN EL CUERPO DEL MENSAJE ** ELIMINE ESTA ETIQUETA CUANDO USE EL ARCHIVO.
         "subject": "Cambio de privacidad en el drive"
         
     }
