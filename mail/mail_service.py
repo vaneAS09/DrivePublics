@@ -1,4 +1,9 @@
+##
+#Drives públicos
+#Autor : Vanessa Ayala Salas
+#Descripción: Se crea la clase para la definición del servicio de envío de correo automático desde Python
 
+##
 #Se Importan las librerías correspondientes
 import smtplib 
 import json
