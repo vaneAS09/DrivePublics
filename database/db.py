@@ -3,11 +3,6 @@
 # Autor : Vanessa Ayala Salas
 #Descripción: Clase encargada de definir la base de datos en SQLlite haciendo uso de sqlalchemy
 # 
-#Cambios (Versión)
-#-------------------------------------
-#No.           Fecha            Autor                    Descripción
-# -----        ----------       --------------------     ---------------
-# 1.0          14/11/2022       Vanessa Ayala Salas      Creación de la clase.
 ##
 
 # Se importan las librerías necesarias para la definición de la base de datos y la estructura de la tabla.
