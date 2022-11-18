@@ -1,3 +1,9 @@
+##
+#Drives públicos
+#Autor : Vanessa Ayala Salas
+#Descripción: Se crea la clase que contiene la autenticación con Google y define la conexión al drive
+
+##
 
 from pydrive2.auth import GoogleAuth
 from pydrive2.drive import GoogleDrive
