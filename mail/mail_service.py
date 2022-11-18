@@ -1,5 +1,5 @@
 
-#Importar librería para envío de correos
+#Se Importan las librerías correspondientes
 import smtplib 
 import json
 
