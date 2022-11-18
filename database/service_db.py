@@ -1,3 +1,9 @@
+##
+#Drives públicos
+#Autor : Vanessa Ayala Salas
+#Descripción: Se crea la clase que contiene los servicios de creación y modificación de registros en la base de datos.
+
+##
 
 import database.db as db
 from database.db import Infofiles
