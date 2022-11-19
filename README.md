@@ -1,5 +1,23 @@
 Aplicación para inventariar en una Base de Datos todos los archivos pertenecientes a la unidad de Drive de un usuario.
 
+PASO # 0 PREPARACIÓN DEL AMBIENTE DE TRABAJO
+
+INSTALACIONES
+
+python.exe -m pip install --upgrade pip      
+pip install build-essential libssl-dev libffi-dev python3-dev cargo   
+pip3 install setuptools-rust
+pyenv install -l    
+pip install pydrive --upgrade  
+python -m venv venv
+pip3 install PyDrive2    
+pip install SQLAlchemy        
+pip install pytest   
+
+Para acceder a la documentación de Python haga click en el siguiente enlace:
+
+https://wiki.python.org/moin/BeginnersGuide
+
 PASO # 1 AUTENTICACIÓN
 
 Para acceder al Drive de Google, se requiere generar una autenticación, para esto se realiza la creación de un proyecto en Google Cloud que permite agregar un usuario autorizado y una firma de consentimiento para establecer una conexión con el drive.
@@ -40,9 +58,29 @@ PASO # 5 CONSTRUCCIÓN DEL MAIN
 Para la construcción del main se genera la estructura de interacción con el drive, importando los servicios necesarios para su funcionamiento tales como: 
 
 1- Autenticación.
+
 2- Consulta de los metadatos.
+
 3- Creación automática de la base de datos y la tabla de almacenamiento de los metadatos.
+
 4- Creación registros de metadatos por archivos nuevos.
-5- Actualización de cambios en los metadatos como nombre y fecha de modificación,
+
+5- Actualización de cambios en los metadatos como nombre y fecha de modificación.
+
 6- Privatización de archivos publicos.
+
 7- Actualización de historial en la base de datos si un archivo fue público.
+
+8- Envío de correo electrónico automático a al propietario de un arhivo cuando cambia la privacidad. 
+
+**** PROPUESTA DE INTERACCIÓN CON LOS METADATOS DEL DRIVE DE UN USUARIO.****
+
+- Para la interacción con los metadatos, se propone búsqueda por id_folder en el drive o por FyleExtension del documento, esto debido a que la utlidad de mapeo de metadatos en el drive reconoce las carpetas como elementos y devuelve la información de la carpeta ignorando los documentos relacionados en ella, esto nos genera una excepción por lo que la funcionalidad de privatización de documentos no estaría cumpliendo al 100% con su propósito.
+
+PASO # 6 PRUEBAS
+
+Para la generación de pruebas unitarias, se hace uso de la herramienta pytest que permite evaluar el buen funcionamiento del código en Python replicando los métodos mediante parámetros para obtener una respuesta.
+
+Para acceder a la documentación por favor haga click en el siguiente enlace: 
+
+https://docs.pytest.org/en/7.2.x/
